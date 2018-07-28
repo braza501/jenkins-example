@@ -62,7 +62,18 @@
       </plugins>
     </pluginManagement>
    <plugins>
-        <plugin>
+   <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+      <configuration>
+        <archive>
+          <manifest>
+            <mainClass>com.example.App</mainClass>
+          </manifest>
+        </archive>
+	</configuration>
+    </plugin>
+    <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
             <version>1.2.1</version>
